@@ -39,7 +39,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Bean("messageSource")
     public MessageSource messageSource() {
         ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
-        messageSource.setBasenames("locale");
+        messageSource.setBasenames("lang");
         messageSource.setDefaultEncoding("UTF-8");
         return messageSource;
     }
